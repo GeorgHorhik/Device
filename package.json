@@ -1,0 +1,22 @@
+{
+  "name": "device",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgHorhik/Device.git"
+  },
+  "author": "GeorgHorhik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgHorhik/Device/issues"
+  },
+  "homepage": "https://github.com/GeorgHorhik/Device#readme",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  }
+}
