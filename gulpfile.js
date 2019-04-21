@@ -1,29 +1,24 @@
 const
-    gulp              = require('gulp'),
-    rename            = require('gulp-rename'),
-    postcss           = require('gulp-postcss'),
-    sugarss           = require('sugarss'),
-    sorting           = require('postcss-sorting'),
-    precss            =  require('precss'),
-    postcssShort      = require('postcss-short'),
-    cssnext           = require('cssnext'),
-    autoprefixer      =require('autoprefixer'),
-    browserSync       = require('browser-sync').create();
+gulp        = require('gulp'),
+rename      = require('gulp-rename'),
+postcss     = require('gulp-postcss'),
+sugarss     = require('sugarss'),
+sorting     = require('postcss-sorting'),
+precss      =  require('precss'),
+postcssShort = require('postcss-short'),
+browserSync = require('browser-sync').create();
+
 
 var processors = [
   precss(/* options */)
 ];
+var csshort = [
+  postcssShort()
+];
 // Rename Task
 function sugar(){
   return gulp.src('app/postcss/main.sss')
-  .pipe(postcss([sorting], { parser: sugarss }, [ autoprefixer() ]))
-  .pipe(cssnext({
-        compress: true
-    }))
-  .pipe(
-  postcss([
-    postcssShort(/* pluginOptions */)
-  ]))
+  .pipe(postcss([sorting], { parser: sugarss }, [postcssShort()]))
   .pipe(
     postcss([
       precss(/* options */)
@@ -35,24 +30,25 @@ function sugar(){
 };
 
 
-function browser_sync () {
-  // sddf...
+
+
+
+
+function reload(){
   browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+    server: {
+        baseDir: "./"
+    }
     });
+    gulp.watch('app/postcss/*.sss', gulp.parallel('sugar'));
+    gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
 
+exports.reload = reload;
+exports.sugar = sugar;
+exports.precss = precss;
 
-function watch(){
-gulp.watch('app/postcss/*.sss', gulp.parallel('sugar'));
-gulp.watch("*.html").on('change', browserSync.reload);
-}
-exports.watch           = watch;
-exports.browser_sync    = browser_sync;
-exports.sugar           = sugar;
-exports.precss          = precss;
 
+gulp.task('default', gulp.parallel(reload))
 // [sorting], { parser: sugarss },
