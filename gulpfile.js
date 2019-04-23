@@ -7,7 +7,7 @@ sorting     = require('postcss-sorting'),
 precss      =  require('precss'),
 postcssShort = require('postcss-short'),
 browserSync = require('browser-sync').create();
-
+// you need do add @import
 
 var processors = [
   precss(/* options */)
