@@ -16,6 +16,10 @@ simple-text()
     font-weight: 300
     line-height: 30px
     letter-spacing: 0.15px
+    &:hover, &focus
+        color rgba(black, .6)
+    &:active
+        color rgba(black, .3)
 
    
 bold-link(color = black, ls = 3.6px)
@@ -25,9 +29,17 @@ bold-link(color = black, ls = 3.6px)
     font-size: 18px
     font-weight: 400
     line-height: 24px
+    &:hover, &focus
+        opacity 0.6
+    &:active
+        opacity 0.3
 
 
 
-uppercase(up)
-    yes = uppercase
-    text-transform: up
+uppercase()
+    text-transform: uppercase
+
+.container
+    min-width 1160px
+    box-sizing: border-box
+    margin 0 auto

@@ -1,0 +1,91 @@
+.header
+    padding 45px 60px 160px 60px
+    display flex
+    justify-content space-between
+    background-color leather
+    margin-top 40px
+    position relative
+    min-height: 300px
+.page
+    &__logo
+        position absolute
+        top -24px
+        letter-spacing 0.3px
+    &__nav
+        display flex
+        flex-direction column
+    &__search
+        box-sizing: border-box
+        margin-top -8px
+        padding 0px 0px 8px 40px
+        color #000
+        font-size: 15px
+        font-weight: 300
+        line-height: 30px
+        letter-spacing: 0.15px
+        background-color transparent
+        border: 0px
+        height 50px
+        &::placeholder
+            simple-text()
+            color: rgba(black, .3)
+        &:hover::placeholder
+            color: rgba(black, .6)
+        &:focus
+            box-sizing: border-box
+            border-bottom 2px solid #000
+            padding-bottom 6px
+            outline: none
+            &::placeholder
+                color: black
+        &-button
+            display none
+            &:hover
+                background-color: black !important
+                color: white !important
+            &:active
+                color: rgba(white, .3) !important
+        &:focus + &-button, &-button:active
+            simple-text()
+            display block
+            border: 2px solid black
+            background-color transparent
+            padding:  8px 20px
+            margin-top -10px
+
+.header__form
+    display flex
+.catalog__title
+    margin-top 25px
+    uppercase()
+.catalog-ul
+    display: none
+    list-style none
+
+.user__nav
+    display flex
+    flex-direction: column
+    align-content: stretch
+    &_rows
+        display flex
+        justify-content flex-start
+        &_end
+            margin-bottom 40px
+            justify-content flex-end
+            margin-top -3px
+            & a
+                simple-text()
+.link
+    &__sign-in
+        margin-right 237px
+    &__compare
+        margin-right: 58px
+    &__cart
+        margin-right 1px
+.user__nav__link
+    bold-link()
+    uppercase()
+    &:first-child
+        margin-right 36px
+    &:nth-child(2)
+        margin-right 105px
