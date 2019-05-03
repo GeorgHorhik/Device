@@ -20,6 +20,12 @@ simple-text()
         color rgba(black, .6)
     &:active
         color rgba(black, .3)
+SimpleText()
+    color #000
+    font-size: 15px
+    font-weight: 300
+    line-height: 30px
+    letter-spacing: 0.15px
 
    
 bold-link(color = black, ls = 3.6px)
@@ -34,6 +40,13 @@ bold-link(color = black, ls = 3.6px)
     &:active
         opacity 0.3
 
+BoldLink(color = black, ls = 3.6px)
+    color: color
+    letter-spacing ls
+    font-family gilroybold
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
 
 
 uppercase()
@@ -43,3 +56,10 @@ uppercase()
     min-width 1160px
     box-sizing: border-box
     margin 0 auto
+
+.visually-hidden 
+  position absolute
+  clip rect(0 0 0 0)
+  width 1px
+  height 1px
+  margin -1px

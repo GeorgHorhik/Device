@@ -30,7 +30,7 @@ body
         color: yellow
 .p 
     font-family: osans
-    simple-text()
+    SimpleText()
 
 .link
     font-family osans
@@ -40,3 +40,24 @@ body
         bold-link()
 
 
+.button
+    BoldLink(black, 2.15px)
+    uppercase()
+    text-decoration none
+    position relative
+    transition: .2s
+    margin-top 40px
+    &::before
+        content: ' '
+        transition: .5s
+        position absolute
+        width: 160%
+        height 8px
+        background-color yellow
+        z-index: -1
+        top: 7px
+        left: -30%
+    &:hover::before, &:focus::before
+        transform: scaleY(4)
+    &:active
+        color: rgba(black, .6)

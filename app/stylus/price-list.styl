@@ -1,0 +1,28 @@
+.categories
+    padding 0
+    margin-top 82px
+    display flex
+    list-style none
+    &__image_long
+        margin-top 40px
+    &__item
+        display flex
+        flex-direction: column
+        align-content: center
+        &_inner
+            display flex
+            justify-content center
+            background-color leather
+            width 160px
+            height 160px
+            margin-bottom 33px
+        &:not(:last-child)
+            margin-right 40px
+    &__link
+        bold-link()
+        text-decoration none
+        letter-spacing 0.3px
+        width 128px
+        &_longer
+            width 160px
+            letter-spacing 0.1px

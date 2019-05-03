@@ -1,6 +1,5 @@
 const
 gulp        = require('gulp'),
-rename      = require('gulp-rename'),
 postcss     = require('gulp-postcss'),
 sorting     = require('postcss-sorting'),
 precss      =  require('precss'),
@@ -14,7 +13,7 @@ function css(){
     .pipe(stylus())
     .pipe(gulp.dest('./app/css'))
     .pipe(browserSync.stream());
-};
+};  
 
 
 gulp.task('autoprefixer', function () {
@@ -42,5 +41,5 @@ function reload(){
 exports.reload = reload;
 exports.css    = css;
 
-gulp.task('default', gulp.parallel(reload))
+gulp.task('default', gulp.parallel(reload));
 // [sorting], { parser: sugarss },

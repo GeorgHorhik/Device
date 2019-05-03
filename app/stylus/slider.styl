@@ -1,0 +1,112 @@
+.page__main
+    position relative
+
+.slider
+    display flex
+    overflow hidden
+    max-width: 1080px
+    flex-shrink: 0
+    position absolute
+    top: -110px
+    &::before
+        content ' '
+        position absolute
+        top 37px
+        right 460px
+        width 100px
+        height 7px
+        background-color white
+
+    // JS Will be here
+    &_inner
+        min-height: 400px
+        position relative
+    // AND HERE
+    &::after
+        content '01'
+        position absolute
+        right: 47px
+        top: -14px
+        color: #ffffff;
+        font-family: gilroybold
+        font-size: 179px
+        font-weight: 400
+        line-height: 179.2px
+        letter-spacing: 0.36px
+
+
+    &__element
+        display flex
+        justify-content space-between
+        &-1
+            width: 1080px
+            & img 
+                margin-right 125px
+                margin-left 90px
+                height 486px
+            & h2
+                width 400px
+                margin-bottom 19px
+            & p
+                width 500px
+            
+
+        &-2
+            width 925px
+            display flex
+            & img 
+                margin-top 12px
+                margin-right 139px
+                margin-left 116px
+                height 485px
+            & p 
+                margin-top 19px
+                width 444px
+                margin-bottom -3px
+            
+        &_inner
+            margin-right 80px
+        
+
+
+    &__h2
+        margin 0
+        margin-top 79px
+        font-family gilroybold
+        font-size: 47px
+        font-weight: 400
+        line-height: 56px
+        letter-spacing: 0.5px
+        width 394px
+    &__p
+        min-width 440px
+        margin-top 16px
+        margin-bottom 0px
+        letter-spacing: -0.1px
+    &__link
+        display inline-block
+        margin-top 52px
+        margin-bottom 55px
+        margin-left 43.6px
+        letter-spacing: 3.8px;
+.table
+    display flex
+    justify-content space-between
+    margin-left -3px
+    &__td
+        font-family gilroy
+        font-size: 36px
+        font-weight: 300
+        line-height: 48px
+        /* Text style for "8,5м" */
+        letter-spacing: 0.36px
+        padding-bottom 4px
+        &:not(:last-child)
+            padding-right 73px
+        &__title
+            font-family: osans
+            font-size: 13px
+            font-weight: 300
+            line-height: 20px
+            /* Text style for "Д, лина па" */
+            letter-spacing: 0.13px
