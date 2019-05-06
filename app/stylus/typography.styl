@@ -39,6 +39,13 @@ body
     &_bold
         bold-link()
 
+.h2
+    font-family gilroybold 
+    font-size: 47px
+    font-weight: 400
+    line-height: 48px
+    /* Text style for "Д, оставка" */
+    letter-spacing: 0.85px
 
 .button
     BoldLink(black, 2.15px)
@@ -58,9 +65,10 @@ body
         height 8px
         background-color yellow
         z-index: -1
-        top: 7px
+        top: 9px
         left: -30%
     &:hover::before, &:focus::before
         transform: scaleY(4)
     &:active
         color: rgba(black, .6)
+
