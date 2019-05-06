@@ -1,0 +1,59 @@
+.company-info 
+    background-color bluegray
+    width: 100%
+    &_container
+        display flex
+        margin-top  181px
+    &__item:not(:nth-child(1))
+        display none
+    &__item
+        margin -66px 315px 146px 115px
+        & h2
+            font-family gilroybold 
+            font-size: 47px
+            font-weight: 400
+            line-height: 48px
+            /* Text style for "Д, оставка" */
+            letter-spacing: 0.85px
+    &__p
+        margin-left -2px
+        margin-top -8px
+        letter-spacing -0.03px
+    &__controls
+        display flex
+        flex-direction column
+        margin-top -13px
+        margin-right  137px
+        margin-left 13px
+        position relative
+        &::before
+            content: ''
+            width 7px
+            height 319px
+            background-color black
+            position absolute
+            right -135px
+            top: -87px
+    &__button
+        margin 0
+        letter-spacing 3.69px
+        transition: 0.3s
+        margin-bottom 38px
+        &:focus
+            outline: none
+        &::before
+            left: -13px
+            background-color yellow
+            top: 9px
+            width 117%
+            transition: 0.14s
+        &:hover::before, &:focus::before
+            transform: scaleY(5)
+        &:active::before
+            transform: scaleY(5)
+            background-color: black
+            width: 203%
+        &:active
+            color: #f7e184
+        
+    

@@ -92,15 +92,17 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  background-color: transparent;
+  border: 0px;
   text-decoration: none;
   position: relative;
   transition: 0.2s;
   margin-top: 40px;
+  z-index: 2;
 }
 .button::before {
   content: ' ';
   transition: 0.5s;
-  position: absolute;
   width: 160%;
   height: 8px;
   background-color: #ffc600;
@@ -433,14 +435,79 @@ body {
   letter-spacing: 0.3px;
   width: 128px;
 }
-.categories__link:hover,
-.categories__linkfocus {
-  opacity: 0.6;
-}
-.categories__link:active {
-  opacity: 0.3;
-}
 .categories__link_longer {
   width: 160px;
   letter-spacing: 0.1px;
+}
+.company-info {
+  background-color: #e5e5e5;
+  width: 100%;
+}
+.company-info_container {
+  display: flex;
+  margin-top: 181px;
+}
+.company-info__item:not(:nth-child(1)) {
+  display: none;
+}
+.company-info__item {
+  margin: -66px 315px 146px 115px;
+}
+.company-info__item h2 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 48px;
+/* Text style for "Д, оставка" */
+  letter-spacing: 0.85px;
+}
+.company-info__p {
+  margin-left: -2px;
+  margin-top: -8px;
+  letter-spacing: -0.03px;
+}
+.company-info__controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: -13px;
+  margin-right: 137px;
+  margin-left: 13px;
+  position: relative;
+}
+.company-info__controls::before {
+  content: '';
+  width: 7px;
+  height: 319px;
+  background-color: #000;
+  position: absolute;
+  right: -135px;
+  top: -87px;
+}
+.company-info__button {
+  margin: 0;
+  letter-spacing: 3.69px;
+  transition: 0.3s;
+  margin-bottom: 38px;
+}
+.company-info__button:focus {
+  outline: none;
+}
+.company-info__button::before {
+  left: -13px;
+  background-color: #ffc600;
+  top: 9px;
+  width: 117%;
+  transition: 0.14s;
+}
+.company-info__button:hover::before,
+.company-info__button:focus::before {
+  transform: scaleY(5);
+}
+.company-info__button:active::before {
+  transform: scaleY(5);
+  background-color: #000;
+  width: 203%;
+}
+.company-info__button:active {
+  color: #f7e184;
 }
