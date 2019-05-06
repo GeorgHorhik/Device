@@ -103,6 +103,7 @@ body {
 .button::before {
   content: ' ';
   transition: 0.5s;
+  position: absolute;
   width: 160%;
   height: 8px;
   background-color: #ffc600;
@@ -510,4 +511,24 @@ body {
 }
 .company-info__button:active {
   color: #f7e184;
+}
+.partners {
+  margin-top: 47px;
+}
+.partners__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.partners__items {
+  filter: grayscale(100%);
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.partners__items:hover,
+.partners__items:focus {
+  opacity: 1;
+  filter: grayscale(0);
 }
