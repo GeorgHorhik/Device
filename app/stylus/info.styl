@@ -1,6 +1,8 @@
 .about
     display flex
     justify-content space-between
+    &__us .button
+        margin-left 23px
     & .h2
         margin-left -2px
     &__p
@@ -9,11 +11,27 @@
         letter-spacing 0.455px
         font-weight: 300
         line-height: 30px
-        width 470px
         &:nth-of-type(2)
             width 465px
             letter-spacing -0.5px
             margin-bottom 67px
+    &__contacts
+        margin-left 134px
+        & .button
+            margin-left 42px
+            &::before
+                top 6px
+                width: 143%;
+                left: -22%;
+    &__map
+        margin-top 53px
+        margin-bottom 74px
+    &__button
+        letter-spacing 3.55px
+        &::before
+            top 7px
+            width: 120%;
+            left: -11%;
 .standart__ul
     list-style none
     padding 0
@@ -22,7 +40,7 @@
     font-size: 16px
     font-weight: 400
     line-height: 40px
-    margin-bottom 60px
+    margin-bottom 62px
 
 .standart__li
     position relative
@@ -36,3 +54,4 @@
         height 4px
         border-radius: 50%
         border: 2px solid bluegray
+
