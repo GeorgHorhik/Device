@@ -106,12 +106,13 @@
                                     <div id="rangeTo" class="range-circle"></div>
                             </div>
                                 <div class="range__line_inner">
-                                    <div id="rangeStic" class=" range__line"></div>
-                                    <div id="rangeProgress "class=" range__line"></div>
+                                    <div id="rangeStic" class="range__line"></div>
+                                    <div id="rangeProgress" class="range__line"></div>
                                 </div>
-                                <label for="rangeFrom">от <span class="rangeFromValue"></span></label>
-                                <label for="rangeTo">до <span class="rangeToValue"></span></label>
-
+                                <div class="range__label_inner">
+                                    <label for="rangeFrom" class="rangeValue">от <span class="rangeValue rangeFromValue">0</span>руб.</label>
+                                    <label for="rangeTo" class="rangeValue">до <span class="rangeValue rangeToValue">5000</span>руб.</label>
+                            </div>
                                 
                             </div>
                         </div>
@@ -120,24 +121,39 @@
                         <fieldset class="filters__color fieldset_default">
                             <legend class="filters__heading">Цвет</legend>
                             <ul class="filters__color__ul">
-                                <li class="filters__color__li"><label  class="filters__color__checkbox"><input type="checkbox" name="Цвет: Черный" class="visually-hidden">Черный</label></li>
-                                <li class="filters__color__li"><label  class="filters__color__checkbox"><input type="checkbox" name="Цвет: Белый" class="visually-hidden">Белый</label></li>
-                                <li class="filters__color__li"><label  class="filters__color__checkbox"><input type="checkbox" name="Цвет: Синий" class="visually-hidden">Синий</label></li>
-                                <li class="filters__color__li"><label  class="filters__color__checkbox"><input type="checkbox" name="Цвет: Красный" class="visually-hidden">Красный</label></li>
-                                <li class="filters__color__li"><label  class="filters__color__checkbox"><input type="checkbox" name="Цвет: Розовый" class="visually-hidden">Розовый</label></li>
+                                <li class="filters__color__li">
+                                    <input id="checkbox-1" type="checkbox" name="Цвет: Черный" class="visually-hidden checkbox">
+                                    <label for="checkbox-1"  class="filters__color__checkbox">Черный</label></li>
+                                <li class="filters__color__li"> 
+                                    <input id="checkbox-2" type="checkbox" name="Цвет: Белый" class="visually-hidden checkbox">
+                                    <label for="checkbox-2"  class="filters__color__checkbox">Белый</label></li>
+                                <li class="filters__color__li"> 
+                                    <input id="checkbox-3" type="checkbox" name="Цвет: Синий" class="visually-hidden checkbox">
+                                    <label for="checkbox-3"  class="filters__color__checkbox">Синий</label></li>
+                                <li class="filters__color__li"> 
+                                    <input id="checkbox-4" type="checkbox" name="Цвет: Красный" class="visually-hidden checkbox">
+                                    <label for="checkbox-4"  class="filters__color__checkbox">Красный</label></li>
+                                <li class="filters__color__li"> 
+                                    <input id="checkbox-5" type="checkbox" name="Цвет: Розовый" class="visually-hidden checkbox">
+                                    <label for="checkbox-5"  class="filters__color__checkbox">Розовый</label></li>
                             </ul>
                             <hr class="catalog__hr">
                         </fieldset>
-                        <fieldset class="filters__range fieldset_default">
+                        <fieldset class="filters__bluetooth fieldset_default">
                             <legend class="filters__heading">Bluetooth</legend>
-                            <ul class="filters__color">
-                            <li class="filters__color__li"><label  class="filters__color__radio"><input type="radio" name="Bluetooth" class="visually-hidden">Есть</label></li>
-                            <li class="filters__color__li"><label  class="filters__color__radio"><input type="radio" name="Bluetooth" class="visually-hidden">Нет</label></li>
+                            <ul class="filters__blue">
+                            <li class="filters__blue__li">
+                                <input  id="radio-1" type="radio" name="Bluetooth" class="visually-hidden radio">
+                                <label for="radio-1" class="filters__blue__radio">Есть</label>
+                            </li>
+                            <li class="filters__blue__li">
+                                <input  id="radio-2" type="radio" name="Bluetooth" class="visually-hidden radio">
+                                <label for="radio-2" class="filters__blue__radio">Нет</label>
+                            </li>
                             </ul>
-                            <hr class="catalog__hr">
                         </fieldset>
                     </fieldset>
-                    <button type="submit" class="button">Показать</button>
+                    <button type="submit" class="button filters__button">Показать</button>
                 </form>
             </aside>
         </div>
