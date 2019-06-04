@@ -34,7 +34,7 @@ function reload(){
     }
     });
     gulp.watch('app/stylus/*.styl', gulp.series('css', 'autoprefixer'));
-    gulp.watch('./*.html').on('change', browserSync.reload);
+    gulp.watch('./**/*.html').on('change', browserSync.reload);
     gulp.watch('./app/**/*.js').on('change', browserSync.reload);
 }
 

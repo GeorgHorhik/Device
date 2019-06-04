@@ -1,0 +1,88 @@
+.catalog__filters
+    width 200px
+    padding-right 96px
+    margin-left auto
+    z-index 1000
+ 
+.catalog_inner
+    display flex
+    position relative
+    &::before
+        content: ''
+        width 100vw
+        background-color rgba(black,.08)
+        height 70px
+        position absolute
+.fieldset_default
+    border none
+    padding 20px 70px auto 45px
+    margin 0
+
+.filters_block
+    background-color gray
+    padding-top 24px
+    padding-bottom 30px
+    margin 0
+    margin-bottom 67px
+
+.filters_inner
+    width 36.77%
+    background-color gray
+.filters__h2
+    font-family gilroybold
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+    text-transform: uppercase
+    letter-spacing: 0.91px
+    display inline-block
+    margin 0
+    letter-spacing 3.6px
+    margin-left 14px
+.filters__heading
+    font-family gilroybold
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    letter-spacing: 0.18px
+    margin-top 16px
+.catalog__hr
+    padding 0
+    margin 0
+    background-color black
+    height 2px
+    border 0
+
+
+.filters__range
+    &_inner
+        min-height: 70px
+        position relative
+        display flex
+        justify-content space-between
+
+.catalog__products
+    display flex
+    flex-wrap: wrap
+    justify-content space-around
+
+.range-circle
+    height 22px
+    width 22px
+    background url(../../src/svg/filter-button.svg) center no-repeat
+    cursor pointer
+.circle_inner
+    display flex
+    justify-content space-between
+    width 93px
+.range__line_inner
+    display flex
+    justify-content space-between
+
+.range__line
+    height 2px
+    width 196px
+    background-color lightgray
+#RangeProgress
+    background-color green
+    width 110px

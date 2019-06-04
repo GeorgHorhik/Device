@@ -1,4 +1,5 @@
 .footer
+    color white
     display flex
     justify-content space-between
     position relative
@@ -15,12 +16,12 @@
         color: yellow
         position absolute
         top: 53px
-        left -3px
+        left -2.8px
         letter-spacing 0.5px
         font-family gilroybold
 .design-stick
     color: white
-    margin-top 66px
+    margin-top 64px
     letter-spacing -0.3px
     position relative
     &::after
@@ -39,7 +40,8 @@
     &__item
         color white
     &__text
-        margin-left -12px
+        
+        margin-left -5px
         padding 0
         list-style none
         font-family gilorybold
@@ -47,8 +49,11 @@
         font-weight: 400
         line-height: 24px
         text-transform: uppercase
+
         display flex
         justify-content space-between
+        width: 428px
+        margin-top: 16px
     &_social
         list-style none
         display flex
@@ -56,6 +61,8 @@
         font-size: 0
         justify-content space-between
         padding: 0
+        margin-top: 46px 
+        margin-right: 9px
 .social-media__buttons
     display block
     width 32px
@@ -63,9 +70,40 @@
     background-position: center
     background-size: 32px 32px
 
+.footer__user
+    display: flex
+    flex-direction column
+    & .p__tel
+        color: white
+        margin-top: 63px
+        padding-left: 30px
+        letter-spacing: -0.1px
+    &__ul
+        list-style none
+        display: flex
+        position: absolute
+        top: 46px
+        right: -3px
+        justify-content: space-between
+        width: 302px
+        padding: 0
+        & .link
+            color white
+    
+
+
+.instagram
+    transform:  scale(1.12) translateX( 1.4px)
+.copyright
+    margin-top: auto
+    margin-left: auto
+    & img
+        width: 35px
+        height 35px
+
 for num in fb instagram twitter
     .{num}
         background-image: url('../../src/svg/' + num + '.svg')
 
 
- 
+

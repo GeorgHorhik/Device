@@ -1,0 +1,39 @@
+.catalog__header 
+    padding-bottom 0px
+    margin-bottom 0px
+    min-height 186px
+.heading_inner
+    padding-left 59px
+    margin-top 37px
+    margin-bottom 46px
+.catalog__heading
+    letter-spacing 0.67px
+    margin-bottom 24px
+
+
+
+.site__bread-crums
+    display flex
+    list-style none
+    padding 0
+    &__item
+        font-family osans
+        text-decoration: none
+        color rgba(black, .3)
+        font-size 14px
+        line-height 24px
+        letter-spacing 0.09px
+        margin-right 34px
+        position relative
+        &:hover, &:focus
+            color rgba(black, .6)
+        &:active
+            color rgba(black, .1)
+    & li
+        position relative
+        &:not(:last-child)::after
+            content url(../../src/svg/nav-arrow.svg)
+            position absolute
+            right 17px
+            top 2px
+
