@@ -15,6 +15,11 @@ body {
   height: 1px;
   margin: -1px;
 }
+.nothing {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 @font-face {
   font-family: GilroyExtraBold;
   src: url("../../src/fonts/web/gilroyextrabold.woff");
@@ -700,6 +705,9 @@ body {
   margin: 0;
   margin-bottom: 67px;
 }
+.filters__inner {
+  position: relative;
+}
 .filters_inner {
   width: 45.2%;
   background-color: rgba(0,0,0,0.08);
@@ -855,6 +863,57 @@ body {
 .filters__button {
   margin-top: 32px;
   margin-left: 150px;
+}
+.catalog__price {
+  max-width: 768px;
+}
+.catalog__sort {
+  display: flex;
+}
+_inner {
+  display: flex;
+  justify-content: space-between;
+}
+_order {
+  display: flex;
+}
+.catalog__sort__item {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: rgba(0,0,0,0.3);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.09px;
+  margin-right: 34px;
+  position: relative;
+}
+.catalog__sort__item:hover,
+.catalog__sort__item:focus {
+  color: #000;
+}
+.catalog__sort__item:active {
+  color: #000;
+}
+.catalog__sort__item_arrow {
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.catalog__sort__item_arrow_top {
+  background-image: url("../../src/svg/icon-up-dir.svg");
+}
+.catalog__sort__item_arrow_bottom {
+  background-image: url("../../src/svg/icon-down-dir.svg");
+}
+.catalog__sort_order__item {
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  padding: 0;
 }
 .footer {
   color: #fff;

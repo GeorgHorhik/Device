@@ -1,0 +1,43 @@
+.catalog__price
+    max-width 768px
+
+.catalog__sort
+    display flex
+&_inner
+    display flex
+    justify-content space-between
+&_order
+    display flex
+
+.catalog__sort__item
+    font-family osans
+    text-decoration: none
+    color rgba(black, .3)
+    font-size 14px
+    line-height 24px
+    letter-spacing 0.09px
+    margin-right 34px
+    position relative
+    &:hover, &:focus
+        color rgba(black)
+    &:active
+        color rgba(black)
+.catalog__sort__item_arrow
+    display block
+    width 11px
+    height 11px
+    margin 0
+    padding 0
+    background-position: center
+    background-repeat: no-repeat
+
+.catalog__sort__item_arrow_top
+    background-image: url(../../src/svg/icon-up-dir.svg)
+.catalog__sort__item_arrow_bottom
+    background-image: url(../../src/svg/icon-down-dir.svg)
+
+.catalog__sort_order__item
+    width 11px
+    height 11px
+    margin 0
+    padding 0
