@@ -686,7 +686,7 @@ body {
 }
 .catalog_inner::before {
   content: '';
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0,0,0,0.08);
   height: 70px;
   position: absolute;
@@ -709,7 +709,7 @@ body {
   position: relative;
 }
 .filters_inner {
-  width: 45.2%;
+  width: 36.69%;
   background-color: rgba(0,0,0,0.08);
   position: relative;
 }
@@ -759,11 +759,6 @@ body {
   justify-content: space-between;
   margin-left: -5px;
   margin-bottom: 7px;
-}
-.catalog__products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 .range-circle {
   height: 22px;
@@ -866,16 +861,30 @@ body {
 }
 .catalog__price {
   max-width: 768px;
+  padding-left: 73px;
 }
 .catalog__sort {
   display: flex;
-}
-_inner {
-  display: flex;
+  margin-left: -172px;
+  width: 290px;
   justify-content: space-between;
 }
-_order {
+.catalog__sort_inner {
   display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+  margin-bottom: 24px;
+}
+.catalog__sort_order {
+  display: flex;
+  margin-right: 8px;
+  width: 41px;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.catalog__sort__h2 {
+  padding: 0;
+  margin: 0;
 }
 .catalog__sort__item {
   font-family: 'Open Sans', sans-serif;
@@ -884,7 +893,6 @@ _order {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.09px;
-  margin-right: 34px;
   position: relative;
 }
 .catalog__sort__item:hover,
@@ -903,6 +911,9 @@ _order {
   background-position: center;
   background-repeat: no-repeat;
 }
+.catalog__sort__item_arrow:not(:hover):not(:focus) {
+  opacity: 0.3;
+}
 .catalog__sort__item_arrow_top {
   background-image: url("../../src/svg/icon-up-dir.svg");
 }
@@ -914,6 +925,110 @@ _order {
   height: 11px;
   margin: 0;
   padding: 0;
+}
+.catalog__products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 92px;
+}
+.catalog__products__item {
+  margin-bottom: 46px;
+  position: relative;
+}
+.catalog__products__item:nth-child(2n) {
+  margin-left: 40px;
+}
+.product__name {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  text-decoration: none;
+  color: #000;
+  width: 280px;
+  display: inline-block;
+}
+.product_hover {
+  opacity: 0;
+  background-color: rgba(238,238,238,0.7);
+  position: absolute;
+  width: 360px;
+  height: 380px;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  top: 0;
+  left: 0;
+}
+.product_hover_inner {
+  margin-top: 140px;
+  margin-left: 111px;
+}
+.product_hover:hover,
+.product_hover:focus {
+  opacity: 1;
+}
+.product__btn {
+  letter-spacing: 3.5px;
+  margin-bottom: 13px;
+}
+.product__info {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: 28px;
+}
+.product__compare {
+  text-decoration: none;
+  opacity: 0.5;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.product__img {
+  width: 360px;
+  height: 380px;
+}
+.product__img_inner {
+  display: inline-block;
+}
+.product__span {
+  color: #464646;
+  margin-top: -3px;
+  letter-spacing: 0.65px;
+  display: inline-block;
+}
+.catalog__navigation {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  background-color: rgba(238,238,238,0.8);
+}
+.catalog__bread-crums__item {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  text-decoration: none;
+  color: #000;
+}
+.catalog__bread-crums__item_number {
+  margin-left: 20px;
+  color: rgba(0,0,0,0.3);
+}
+.catalog__bread-crums__item_number:hover,
+.catalog__bread-crums__item_number:focus {
+  color: rgba(0,0,0,0.5);
+}
+#catalog__bread-crums__item_acive {
+  color: #000;
 }
 .footer {
   color: #fff;

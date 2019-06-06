@@ -159,7 +159,7 @@
         </div>
             <section class="catalog__price">
                 <div class="catalog__sort_inner">
-                    <h2 class="h2 filters__h2">Сортировка</h2>
+                    <h2 class="h2 filters__h2 catalog__sort__h2">Сортировка</h2>
                     <ul class="catalog__sort nothing">
                         <li><a href="#" class="catalog__sort__item ">По цене</a></li>
                         <li><a href="#" class="catalog__sort__item ">По типу</a></li>
@@ -172,63 +172,67 @@
                 </div>
                 <ul class="nothing catalog__products">
                     <li class="catalog__products__item product">
-                        <img src="../../src/img/item-1.jpg" alt="" class="product__img">
-                        <div>
+                        <a href="#" class="product__img_inner"><img src="../../src/img/item-1.jpg" alt="" class="product__img"></a>
+                        <div class="product__info">
                                 <a href="" class="product__name">Любительская селфи-палка</a>
-                                <span class="p">500 руб.</span>
+                                <span class="p product__span">500 руб.</span>
                         </div>
-                        <div class="product_hover">
-                            <button class="button">В корзину</button>
+                        <div class="product_hover"> <div class="product_hover_inner">
+                            <button class="button product__btn">В корзину</button> <br>
                             <a href="" class="product__compare p">Добавить к сравнению</a>
                         </div>
-                    </li>
-
-                    <li class="catalog__products__item product">
-                        <img src="../../src/img/item-2.jpg" alt="" class="product__img">
-                        <div>
-                                <a href="" class="product__name">Профессиональная селфи-палка</a>
-                                <span class="p">1 500 руб.</span>
-                        </div>
-                        <div class="product_hover">
-                                <button class="button">В корзину</button>
-                                <a href="" class="product__compare p">Добавить к сравнению</a>
                         </div>
                     </li>
 
                     <li class="catalog__products__item product">
-                        <img src="../../src/img/item-3.jpg" alt="" class="product__img">
-                        <div>
-                                <a href="" class="product__name">Непотопляемая селфи-палка</a>
-                                <span class="p">2 500 руб.</span>
+                        <a href="#" class="product__img_inner"><img src="../../src/img/item-2.jpg" alt="" class="product__img"></a>
+                        <div class="product__info">
+                                <a href="" class="product__name">Профессиональная <br> селфи-палка</a>
+                                <span class="p product__span">1 500 руб.</span>
                         </div>
-                        <div class="product_hover">
-                                <button class="button">В корзину</button>
+                        <div class="product_hover"> <div class="product_hover_inner">
+                                <button class="button product__btn">В корзину</button> <br>
                                 <a href="" class="product__compare p">Добавить к сравнению</a>
+                        </div>
                             </div>
                     </li>
 
                     <li class="catalog__products__item product">
-                        <img src="../../src/img/item-4.jpg" alt="" class="product__img">
-                        <div>
-                                <a href="" class="product__name">Селфи-палка «Следуй за мной»</a>
-                                <span class="p">4 900 руб.</span>
-                        </div>
-                        <div class="product_hover">
-                                <button class="button">В корзину</button>
+                        <a href="#" class="product__img_inner"><img src="../../src/img/item-3.jpg" alt="" class="product__img"></a>
+                        <div class="product__info">
+                                <a href="" class="product__name">Непотопляемая селфи-палка</a>
+                                <span class="p product__span">2 500 руб.</span>
+                        </div>  
+                        <div class="product_hover"> <div class="product_hover_inner">
+                                <button class="button product__btn">В корзину</button> <br>
                                 <a href="" class="product__compare p">Добавить к сравнению</a>
+                            </div>
+                            </div>
+                    </li>
+
+                    <li class="catalog__products__item product">
+                        <a href="#" class="product__img_inner"><img src="../../src/img/item-4.jpg" alt="" class="product__img"></a>
+                        <div class="product__info">
+                                <a href="" class="product__name">Селфи-палка «Следуй за мной»</a>
+                                <span class="p product__span">4 900 руб.</span>
+                        </div>
+                        <div class="product_hover"> <div class="product_hover_inner">
+                                <button class="button product__btn">В корзину</button> <br>
+                                <a href="" class="product__compare p">Добавить к сравнению</a>
+                            </div>
                             </div>
                     </li>
                 </ul>
                 <nav class="catalog__navigation">
-                    <a href="#" class="catalog__navigation__direction"></a>
+                    <a href="#" class="catalog__bread-crums__item">Назад</a>
                     <ul class="catalog__bread-crums nothing">
                         <ol class="nothing">
-                            <a href="" class="catalog__bread-crums__item  catalog__bread-crums__item_acive ">1</a>
-                            <a href="" class="catalog__bread-crums__item">2</a>
-                            <a href="" class="catalog__bread-crums__item">3</a>
+                            <a href="" class="catalog__bread-crums__item catalog__bread-crums__item_number" id="catalog__bread-crums__item_acive">1</a>
+                            <a href="" class="catalog__bread-crums__item catalog__bread-crums__item_number">2</a>
+                            <a href="" class="catalog__bread-crums__item catalog__bread-crums__item_number">3</a>
                         </ol>
                     </ul>
-                    <a href="#" class="catalog__navigation__direction"></a>
+                    <a href="#" class="catalog__bread-crums__item">Вперед</a>
                 </nav>
             </section>
         </div>
