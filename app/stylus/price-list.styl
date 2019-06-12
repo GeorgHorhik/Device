@@ -16,8 +16,16 @@
             width 160px
             height 160px
             margin-bottom 33px
+            transition: 300ms
+            &:hover, &:focus
+                background-color yellow
+            &:active > img
+                opacity .3
+
+                
         &:not(:last-child)
             margin-right 40px
+
     &__link
         BoldLink()
         text-decoration none

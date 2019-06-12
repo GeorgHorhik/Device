@@ -10,6 +10,7 @@
 </head>
 
 <body class="page">
+	<div class="dgray">
 	<header class="header container">
 		<h1 class="h1 page__logo ">
 			DEVICE
@@ -19,50 +20,53 @@
 				<input type="search" class="form__search page__search" placeholder="Поиск по сайту">
 				<input type="submit" value="Найти" class="page__search-button">
 			</form>
-			<a class="user__nav__link catalog__title link_bold link">
+			<a tabindex=0 class="user__nav__link catalog__title link_bold link">
 					Каталог товаров
 			</a>
 			<ul class="ul catalog-ul">
 						<li class="catalog-ul__item">
-							<a href="#" class="link">
+							<a tabindex=0 href="#" class="link">
 									Виртуальная реальность
 
 						</a>
 					</li>
-						<li class="catalog-ul__item">
-							<a href="app/html/catalog.html" class="link">
-									Моноподы для селфи
-
-						</a>
-					</li>
-						<li class="catalog-ul__item">
-							<a href="#" class="link">
-									Экшн-камеры
-
-						</a>
-					</li>
 					<li class="catalog-ul__item">
-						<a href="#" class="link">
+						<a tabindex=0 href="#" class="link">
 								Фитнес-браслеты
 
 					</a>
 				</li>
+				<li class="catalog-ul__item">
+					<a tabindex=0 href="#" class="link">
+							Квадрокоптеры
+				</a>
+			</li>
+						<li class="catalog-ul__item">
+							<a tabindex=0 href="app/html/catalog.html" class="link">
+									Моноподы для селфи
+
+						</a>
+					</li>
 					<li class="catalog-ul__item catalog-ul__item_wrap ">
-						<a href="#" class="link ">
+						<a tabindex=0 href="#" class="link ">
 								Умные часы
 
 					</a>
 				</li>
-				<li class="catalog-ul__item">
-					<a href="#" class="link">
-							Квадрокоптеры
-				</a>
-			</li>
+						<li class="catalog-ul__item">
+							<a tabindex=0 href="#" class="link">
+									Экшн-камеры
+
+						</a>
+					</li>
+					
+					
+				
 			</ul>
 		</nav>
 		<nav class="user__nav">
 			<div class="user__nav_rows user__nav_rows_end">
-				<a href="#" class="link link__sign-in">
+				<a href="#" class="link link__user">
 						Войти
 				</a>
 				<a href="#" class="link link__compare">
@@ -82,7 +86,7 @@
 	<main class="page__main ">
 		<div class="slider_inner  container">
 			<div class="slider container">
-				<section class="slider__element slider__element-1" name=element1>
+				<section class="slider__element slider__element-1 slider__element_active" name=element1>
 					<img src="src/img/slider-1.png.png" alt="Фото селфи палки">
 					<div class="slider__element_inner">
 						<h2 class="h2 slider__h2">
@@ -108,7 +112,7 @@
 						</table>
 					</div>
 				</section>
-					<section class="slider__element slider__element-2">
+					<section class="slider__element slider__element-2 ">
 							<img src="src/img/slider-2.png.png" alt="Фото селфи палки">
 							<div class="slider__element_inner">
 								<h2 class="h2 slider__h2">
@@ -130,7 +134,7 @@
 								</table>
 							</div>
 					</section>
-					<section class="slider__element slider__element-3">
+					<section class="slider__element slider__element-3 ">
 							<img src="src/img/slider-3.png.png" alt="Фото селфи палки">
 							<div class="slider__element_inner">
 								<h2 class="h2 slider__h2">
@@ -156,9 +160,9 @@
 					</section>
 					<!--radio-->
 					<div class="slider__toggle">
-						<button class="slider__button" onclick="nextSlide()"></button>
-						<button class="slider__button"></button>
-						<button class="slider__button"></button>
+						<button type="button" class="slider__button slider__button-1  slider__button_active" ></button>
+						<button type="button" class="slider__button slider__button-2 "></button>
+						<button type="button" class="slider__button slider__button-3 "></button>
 					</div>
 			
 			</div>
@@ -215,7 +219,7 @@
 					<button class="company-info__button button">Кредит</button>
 				</div>
 				<div company-info__item_container>
-					<section class="company-info__item">
+					<section class="company-info__item company-info__item_delivery">
 						<h2 class="h2">
 							Доставка
 						</h2>
@@ -223,7 +227,7 @@
 							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 						</p>
 					</section>
-					<section class="company-info__item">
+					<section class="company-info__item company-info__item_credit">
 						<h2 class="h2">
 							Гарантия
 						</h2>
@@ -232,11 +236,11 @@
 								Товар, не дом, конечно же.
 						</p>
 					</section>
-					<section class="company-info__item">
+					<section class="company-info__item company-info__item_warranty">
 						<h2 class="h2">
 							Кредит
 						</h2>
-						<p class="p company-info__item">
+						<p class="p company-info__p">
 							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
 								условия кредита. Выгодные для нашего банка, разумеется.
 						</p>
@@ -294,7 +298,7 @@
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
 				<iframe class="about__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.537335462582!2d37.528434993189656!3d55.68739665047695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1557241015999!5m2!1sen!2sru" width="560" height="222" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<a href="#" class="button about__button">
+				<a href="#" class="button button_showPopup">
 						НАпишите нам
 				</a>
 			</section>
@@ -313,9 +317,9 @@
 					<div class="footer__columns footer__links">
 			
 				<ul class="footer__links__text">
-					<li class="footer__links__item link_bold">Доставка</li>
-					<li class="footer__links__item link_bold">Гарантия</li>
-					<li class="footer__links__item link_bold">Контакты</li>
+					<li class=" "><a class="footer__links__item link_bold">Доставка</a></li>
+					<li class=" "><a class="footer__links__item link_bold">Гарантия</a></li>
+					<li class=" "><a class="footer__links__item link_bold">Контакты</a></li>
 				</ul>
 				<ul class="footer__links_social">
 					<li class="footer__links__social__item"><a href=# class="social-media__buttons fb">facebook</a></li>
@@ -345,8 +349,39 @@
 				<a href="#" class="copyright"><img src="../src/img/MyLogo.jpeg" alt="Сайт сделан GeorgHorhik"></a>
 			</div>
 		</footer>
-	</div">
-	<script src="app/js/slider.js" async></script>
+		<section class="writeUs ">
+			<form action="https://htmlacademy.ru/echo" class="writeUs__form">
+				<div class="writeUs_inner">
+		
+					<label class="writeUs__span">
+							Ваше имя:
+						<br>
+						<input type="text" class="input_text writeUs__name" placeholder="Имя Фамилия" ></label>
+					<label class="writeUs__span">
+							Ваш e-mail:
+						<br>
+						<input type="text" class="input_text writeUs__email" placeholder="email@example.com" >
+					</label>
+
+				</div>
+				<label class="writeUs__span writeUs__span_textarea">
+							Текст письма:<br>
+							<textarea placeholder="Describe yourself here..." class="input_text form__textarea" style="resize: none"></textarea>
+			</label>
+			<br>
+			<button type="submit" class="button writeUs__button">отправить</button>
+			</form>
+			<a href="#" class="writeUs_close">
+				<img src="src/svg/modal-close.svg" alt="Закрыть форму">
+			</a>
+		</section>
+
+	</div>
+</div>
+	<div class="meme"  style="cursor: none">
+		<img src="src/img/meme.png" alt="loooooooooooooooser" class="meme__text">
+	</div>
+	<script src="app/js/index.js" async></script>
 </body>
 
 </html>

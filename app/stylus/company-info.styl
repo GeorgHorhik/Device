@@ -8,6 +8,7 @@
         display none
     &__item
         margin -66px 315px 146px 115px
+        position: relative
     &__p
         margin-left -2px
         margin-top -8px
@@ -49,3 +50,9 @@
         &:active
             color: #f7e184
         
+for info in delivery credit  warranty 
+    .company-info__item_{info}::after
+        content: url(../../src/svg/info.svg)
+        position absolute
+        top 11px
+        right -249px
